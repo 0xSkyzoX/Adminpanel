@@ -10,7 +10,7 @@ export async function POST(request: Request) {
       data: {
         name: name,
         description: description,
-        license: license,
+        license: license as boolean,
       },
     });
     return NextResponse.json(server);
